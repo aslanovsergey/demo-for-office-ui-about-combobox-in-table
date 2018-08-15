@@ -38,6 +38,24 @@ class App extends React.Component<IAppProps, IAppState> {
           Email: "max@domain.com",
           Age: 32,
           State: "NY"
+        },
+        {
+          Name: "Victoria",
+          Email: "vika@domain.com",
+          // Age: 0,
+          State: "AK"
+        },
+        {
+          Name: "Martin",
+          Email: "martin@domain.com",
+          // Age: 0,
+          State: "AZ"
+        },
+        {
+          Name: "Donald",
+          Email: "donald@domain.com",
+          // Age: 0,
+          State: "AL"
         }
       ],
       columns: this._buildColumns()

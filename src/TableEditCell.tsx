@@ -7,7 +7,7 @@ export interface ITableEditCellProps {
     itemIndex: number,
     selectedKey: string | number | undefined,
     column: IColumn,
-    customValue: string,
+    customValue: string | undefined,
     updateDataTableItemFunc: (itemIndex: number, fieldName: string | undefined, fieldValue: string) => void
   }
   
@@ -20,7 +20,7 @@ export interface ITableEditCellProps {
                 allowFreeform={true}
                 options={this.props.options}
                 onChanged={this._onChanged}
-                value={this.props.customValue}
+                text={this.props.customValue ? this.props.customValue.toString() : ""}
                 onMenuOpen={() => console.log('ComboBox menu opened')}
                 onPendingValueChanged={(option, pendingIndex, pendingValue) =>
                     console.log(
